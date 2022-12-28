@@ -18,23 +18,33 @@
     />
     <link
       rel="stylesheet"
-      href="../libs/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css"
+      href="./libs/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css"
     />
-    <link href="../css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="./libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <link href="./css/style.css" rel="stylesheet" />
     <title>Fashion Tiger</title>
   </head>
   <body>
     <header>
-      <img src="./images/header_bg.png" class="header__bg">
       <div class="container">
         <div class="header__top">
           <div class="row">
             <div class="logo">
-              <img class="tiger_logo__image" src="../images/tiger_logo.png" />
+              <img
+                class="tiger_logo__image"
+                src="./images/header/tiger_logo.png"
+              />
               <a href="./index.html" class="logo__link">Fashion Tiger</a>
               <img
                 class="tiger_logo__image"
-                src="../images/tiger_logo_reverse.png"
+                src="./images/header/tiger_logo_reverse.png"
               />
             </div>
             <nav class="header__nav">
@@ -56,21 +66,227 @@
     <main>
       <div class="container">
         <div class="main-section_choose">
-          <a href="#"><img src="../images/мужское.png" /></a>
-          <a href="#"><img src="../images/женское.png" /></a>
+          <a href="#"><img src="./images/main/choose/мужское.png" /></a>
+          <a href="#"><img src="./images/main/choose/женское.png" /></a>
         </div>
-        <!-- <div class="main-section_banners"> -->
-          <div class="main-section_banner_images">
-            <img src="../images/вышивка.png" alt="Вышивка" />
+
+        <div class="main-section_banners">
+          <div class="container">
+            <img src="./images/main/banners/Вышивка.png" alt="Вышивка" />
             <p class="main-section_banner_texts">Вышивка</p>
-            <img src="../images/Старые коллекции.png" alt="Старые коллекции" />
-            <p class="main-section_banner_texts">Старые коллекции</p>
-            <img src="../images/Средиземноморье.png" alt="Средиземноморье" />
-            <p class="main-section_banner_texts">Средиземноморье</p>
-            <img src="../images/Спорт.png" alt="Спорт" />
-            <p class="main-section_banner_texts">Спорт</p>
+            <p class="main-section_banner_texts_arrows">→</p>
           </div>
-          <!-- <div class="main-section_banner_texts">Вышивка</div> -->
+          <div class="container">
+            <img
+              src="./images/main/banners/Старые коллекции.png"
+              alt="Старые коллекции"
+            />
+            <p class="main-section_banner_texts">Старые коллекции</p>
+            <p class="main-section_banner_texts_arrows">→</p>
+          </div>
+          <div class="container">
+            <img
+              src="./images/main/banners/Средиземноморье.png"
+              alt="Средиземноморье"
+            />
+            <p class="main-section_banner_texts">Средиземноморье</p>
+            <p class="main-section_banner_texts_arrows">→</p>
+          </div>
+          <div class="container">
+            <img src="./images/main/banners/Спорт.png" alt="Спорт" />
+            <p class="main-section_banner_texts">Спорт</p>
+            <p class="main-section_banner_texts_arrows">→</p>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="men_and_women_title">Мужчины</h1>
+      <p class="men_and_women_p">Новинки</p>
+      <div class="owl-carousel owl-theme men_carousel_theme">
+        <div class="item">
+          <img src="./images/main/carousel_men/man_1.png" alt="man 1" />
+        </div>
+        <div class="item">
+          <img src="./images/main/carousel_men/man_2.png" alt="man 2" />
+        </div>
+        <div class="item">
+          <img src="./images/main/carousel_men/man_3.png" alt="man 3" />
+        </div>
+        <div class="item">
+          <img src="./images/main/carousel_men/man_4.png" alt="man 4" />
+        </div>
+        <div class="item">
+          <img src="./images/main/carousel_men/man_5.png" alt="man 5" />
+        </div>
+        <div class="item">
+          <img src="./images/main/carousel_men/man_6.png" alt="man 6" />
+        </div>
+      </div>
+
+      <h1 class="men_and_women_title">Женщины</h1>
+      <p class="men_and_women_p">Новинки</p>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="./images/main/carousel_women/woman_1.png" alt="woman 1" />
+        </div>
+        <div class="item">
+          <img src="./images/main/carousel_women/woman_2.png" alt="woman 2" />
+        </div>
+        <div class="item">
+          <img src="./images/main/carousel_women/woman_3.png" alt="woman 3" />
+        </div>
+        <div class="item">
+          <img src="./images/main/carousel_women/woman_4.png" alt="woman 4" />
+        </div>
+        <div class="item">
+          <img src="./images/main/carousel_women/woman_5.png" alt="woman 5" />
+        </div>
+        <div class="item">
+          <img src="./images/main/carousel_women/woman_6.png" alt="man 6" />
+        </div>
+      </div>
+
+      <div class="main-section_discount">
+        <h1 class="main-section_title">СКИДКИ ДО 90%</h1>
+        <div class="new-items">
+          <div class="new-item_card">
+            <img
+              class="new-item_image"
+              src="./images/main/discount/Джинсовые шорты.png"
+            />
+            <p class="new-item_text">Джинсовые шорты</p>
+            <p class="new-item_text new-item_text__price">₽ 5 000</p>
+          </div>
+          <div class="new-item_card">
+            <img
+              class="new-item_image"
+              src="./images/main/discount/Куртка зимняя W RALLE JACKET.png"
+            />
+            <p class="new-item_text">Куртка зимняя W-RALLE JACKET</p>
+            <p class="new-item_text new-item_text__price">₽ 33 000</p>
+          </div>
+          <div class="new-item_card">
+            <img
+              class="new-item_image"
+              src="./images/main/discount/Серый спортивный комплект.png"
+            />
+            <p class="new-item_text">Серый спортивный комплект</p>
+            <p class="new-item_text new-item_text__price">₽ 20 000</p>
+          </div>
+          <div class="new-item_card">
+            <img
+              class="new-item_image"
+              src="./images/main/discount/Зеленые джоггеры.png"
+            />
+            <p class="new-item_text">Зеленые джоггеры</p>
+            <p class="new-item_text new-item_text__price">₽ 12 000</p>
+          </div>
+        </div>
+        <button class="new-item_button">Все модели →</button>
+      </div>
+
+      <div class="main-section_brands">
+        <h1 class="main-section_title">Наши бренды</h1>
+        <div class="main-section_brands_rows">
+          <div class="main-section_brands_logos">
+            <img class="brands_logos" src="./images/main/brands/nike.png" />
+            <img class="star" src="./images/main/brands/star.png" />
+          </div>
+          <div class="main-section_brands_logos">
+            <img class="brands_logos" src="./images/main/brands/lacoste.png" />
+            <img class="star" src="./images/main/brands/star.png" />
+          </div>
+          <div class="main-section_brands_logos">
+            <img
+              class="brands_logos chanel_logo_fix"
+              src="./images/main/brands/chanel.png"
+            />
+            <img class="star" src="./images/main/brands/star.png" />
+          </div>
+          <div class="main-section_brands_logos">
+            <img class="brands_logos" src="./images/main/brands/gucci.png" />
+            <img class="star" src="./images/main/brands/star.png" />
+          </div>
+        </div>
+        <div class="main-section_brands_rows">
+          <div class="main-section_brands_logos">
+            <img class="brands_logos" src="./images/main/brands/adidas.png" />
+            <img class="star" src="./images/main/brands/star.png" />
+          </div>
+          <div class="main-section_brands_logos">
+            <img class="brands_logos" src="./images/main/brands/zara.png" />
+            <img class="star" src="./images/main/brands/star.png" />
+          </div>
+          <div class="main-section_brands_logos">
+            <img class="brands_logos" src="./images/main/brands/Na Kd.png" />
+            <img class="star" src="./images/main/brands/star.png" />
+          </div>
+          <div class="main-section_brands_logos">
+            <img
+              class="brands_logos"
+              src="./images/main/brands/Hennes and Mauritz.png"
+            />
+            <img class="star" src="./images/main/brands/star.png" />
+          </div>
+        </div>
+        <div class="main-section_brands_rows">
+          <div class="main-section_brands_logos">
+            <img class="brands_logos" src="./images/main/brands/vans.png" />
+            <img class="star" src="./images/main/brands/star.png" />
+          </div>
+          <div class="main-section_brands_logos">
+            <img class="brands_logos" src="./images/main/brands/ellesse.png" />
+            <img class="star" src="./images/main/brands/star.png" />
+          </div>
+          <div class="main-section_brands_logos">
+            <img
+              class="brands_logos tnf_logo_fix"
+              src="./images/main/brands/thenorthface.png"
+            />
+            <img class="star" src="./images/main/brands/star.png" />
+          </div>
+          <div class="main-section_brands_logos">
+            <img
+              class="brands_logos carhartt_logo_fix"
+              src="./images/main/brands/carhartt.png"
+            />
+            <img class="star" src="./images/main/brands/star.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="main-section_contacts_and_payment">
+        <div class="cap">
+          <h1 class="main-section_title">Наши контакты</h1>
+          <p class="main-section_contact_texts">
+            Номер телефона: +7 777 777 7777
+          </p>
+          <p class="main-section_contact_texts">
+            Адрес: Мы находимся в Казахстане, г. Актау. 5-мкр.
+          </p>
+        </div>
+        <div class="cap">
+          <h1 class="main-section_title">Способ оплаты</h1>
+          <div class="payment">
+            <img
+              class="animated_zoom"
+              src="./images/main/payment_cards/paypal.png"
+            />
+            <img
+              class="animated_zoom"
+              src="./images/main/payment_cards/gb.png"
+            />
+            <div class="payment_last">
+              <img
+                class="animated_zoom"
+                src="./images/main/payment_cards/visa.png"
+              />
+              <img
+                class="animated_zoom"
+                src="./images/main/payment_cards/mastercard.png"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -81,11 +297,11 @@
             <h1 class="footer-main_title">Fashion Tiger</h1>
             <div class="footer-main_slogan_up">
               <div class="footer-main_slogan_text">Будь ЯРКИМ как тигр</div>
-              <img src="../images/footer-slogan_icon.png" />
+              <img src="./images/footer/footer-slogan_icon.png" />
             </div>
             <div class="footer-main_slogan_down">
               <div class="footer-main_slogan_text">Быстрая доставка</div>
-              <img class="truck" src="../images/truck.png" />
+              <img class="truck" src="./images/footer/truck.png" />
             </div>
             <p></p>
             <div class="footer__icons">
@@ -136,6 +352,8 @@
       </div>
       <div class="footer_line"></div>
     </footer>
-    <script src="../js/script.js"></script>
+    <script src="./libs/jQuery.js"></script>
+    <script src="./libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

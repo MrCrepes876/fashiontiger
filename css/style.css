@@ -4,7 +4,6 @@
 
 /*Сброс стилей.*/
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -24,6 +23,10 @@ body {
 
 .container {
   margin: 0 auto;
+}
+
+.container_banner{
+  display: block;
 }
 
 .row {
@@ -124,7 +127,7 @@ header {
   position: relative;
   padding: 12px 0 100px;
   background-color: black;
-  background-image: url(../images/header_bg.png);
+  background-image: url(../images/header/header_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -159,7 +162,7 @@ header {
 
 .bg_h1 {
   margin-bottom: 10px;
-  color: #000;
+  color: #000000;
   font-size: 50px;
   
 }
@@ -201,20 +204,151 @@ header {
 
 .main-section_banners {
   display: flex;
-  /* justify-content: space-around; */
-  /* margin-left: 2em; */
-}
-
-.main-section_banner_images {
-  display: flex;
   justify-content: space-around;
-  flex-direction: row;
+  margin-bottom: 15em;
 }
 
 .main-section_banner_texts {
   display: flex;
-  justify-content: end;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.main-section_banner_texts_arrows {
+  display: flex;
+  margin-top: -20px;
+  justify-content: center;
+}
+
+/* carousel */
+.men_carousel_theme {
+  margin-bottom: 15em;
+}
+
+.men_and_women_title, 
+.men_and_women_p {
+  text-align: center;
+}
+
+.main-section_discount {
+  display: block;
+  text-align: center;
+  margin-top: 15em;
+}
+
+.main-section_discount_title {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.new-items {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 250px 0px 250px;
+}
+
+.new-item_card {
+  display: block;
+  justify-content: center;
+}
+
+.new-item_text {
+  font-size: 14px;
+}
+
+.new-item_text__price {
+  line-height: 17px;
+  font-weight: 500;
+}
+
+.new-item_button {
+  width: 200px;
+  height: 50px;
+  background-color: #000000;
+  margin-top: 50px;
+  border-radius: 30px;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.4s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.new-item_button:hover {
+  background-color: #fff;
+  color: black;
+  transition: 0.4s;
+}
+
+.main-section_brands {
+  display: block;
+  text-align: center;
+  margin-top: 250px;
+}
+
+.main-section_brands_rows {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+
+.main-section_brands_logos {
+  display: flex;
+}
+
+.brands_logos {
+  width: 195px;
+  height: 165px;
+}
+
+.chanel_logo_fix {
+  width: 168px;
+}
+
+.tnf_logo_fix {
+  width: 225px;
+  height: 128px;
+}
+
+.carhartt_logo_fix {
+  width: 232px;
+  height: 136px;
+}
+
+.star {
+  height: 30px;
+  width: 34px;
+  align-self: flex-end;
+}
+
+.main-section_contacts_and_payment {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cap {
+  justify-content: block;
+}
+
+.main-section_contact_texts {
+  display: flex;
+  justify-content: start;
+}
+
+.payment {
+  display: flex;
+}
+
+.payment_last {
+  display: grid;
+  margin-left: 10px;
+}
+
+.animated_zoom:hover {
+  transform: scale(1.5); 
+}
+
+.animated_zoom {
+  transition: transform .2s;
 }
 
 footer {
@@ -234,7 +368,6 @@ footer {
 }
 
 .footer-main_title {
-  font-family: 'Montserrat', sans-serif;
   font-size: 50px;
   color: #fff;
 }
@@ -275,7 +408,6 @@ footer {
 }
 
 .footer_right_part_title {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: white;
   font-size: 25px;
@@ -298,13 +430,6 @@ li {
   height: 2px;
   width: 100%;
 }
-/*.footer-main_right_part_more{
-  
-}
-
-.footer-main_right_part_aboutus{
-  
-}*/
 
 .footer__icons {
   /* margin-right: 30px; */
